@@ -231,7 +231,7 @@ accuracy_train*100
 #Predictions on the test set
 nnet_predictions_test <-predict(nnet_model, test)
 table(test$class, nnet_predictions_test)
-acc<-((150+80)/nrow(test))*100)
+acc<-((150+80)/nrow(test))*100
 
 #Recall on test set 
 recall<-(80/150)*100
